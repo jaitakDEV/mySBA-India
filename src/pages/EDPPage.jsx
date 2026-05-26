@@ -10,7 +10,7 @@ import workshop1 from "../assets/EDP1.jpg";
 import workshop2 from "../assets/EDP2.jpg";
 import workshop3 from "../assets/EDP3.jpg";
 import workshop4 from "../assets/EDP4.jpg";
-import workshop5 from "../assets/EDP5.jpg";
+import workshop5 from "../assets/EDP5.JPG";
 import workshop6 from "../assets/EDP6.jpg";
 
 /* =========================
