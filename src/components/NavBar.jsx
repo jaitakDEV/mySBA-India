@@ -39,6 +39,7 @@ const Navbar = () => {
     {
       name: "Services",
       dropdown: [
+        { name: "Services", path: "/services" },
         { name: "Mentoring", path: "/services/mentoring" },
         { name: "Tax Services", path: "/services/tax-services" },
         { name: "Digital Marketing", path: "/services/digital-marketing" },
@@ -59,7 +60,7 @@ const Navbar = () => {
         { name: "FFO/FPO", path: "/entrepreneurship/ffo-fpo" },
       ],
     },
-
+    { name: "Startup", path: "/startup" },
     { name: "Scheme", path: "/scheme" },
     { name: "Job & Career", path: "/job-career" },
     { name: "Join Us", path: "/join-us" },
