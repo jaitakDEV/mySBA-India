@@ -6,6 +6,8 @@ import AboutUs from "./pages/AboutUs";
 import EventsPage from "./pages/EventsPage";
 import EDPPage from "./pages/EDPPage";
 import Services from "./pages/Services";
+import StartupPage from "./pages/StartupPage";
+import StartupDirectory from "./pages/StartupDirectory";
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
         <Route path="/events" element={<EventsPage />} />
         <Route path="/events/edp" element={<EDPPage />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/startup" element={<StartupPage />} />
+        <Route path="/startup/directory" element={<StartupDirectory />} />
       </Route>
     </Routes>
   );

@@ -1,6 +1,7 @@
 // src/pages/EDPJourney.jsx
 
 import React, { memo } from "react";
+import { motion } from "framer-motion";
 
 import { FaUserEdit, FaBookOpen, FaAward, FaArrowRight } from "react-icons/fa";
 
@@ -48,27 +49,23 @@ const EDPJourney = () => {
           {/* TOP */}
           <div className="max-w-3xl pt-10 md:pt-16">
             {/* TAG */}
-            <div
-              className="
-                inline-flex
-                items-center
-                gap-2
-                px-5
-                py-2.5
-                rounded-full
-                bg-white/70
-                backdrop-blur-xl
-                border
-                border-white/40
-                shadow-sm
-              "
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="inline-flex items-center gap-3 bg-white/70 backdrop-blur-xl px-5 py-3 rounded-full shadow-lg border border-white/40"
             >
-              <div className="w-2 h-2 rounded-full bg-[#ff7a00]" />
+              {/* GLOW DOT */}
+              <div className="relative flex items-center justify-center">
+                <span className="absolute w-5 h-5 rounded-full bg-[#ff7a00]/40 animate-ping"></span>
 
-              <span className="text-[11px] tracking-[0.18em] uppercase font-semibold text-[#ff7a00]">
+                <span className="relative w-3 h-3 rounded-full bg-[#ff7a00] shadow-[0_0_15px_#ff7a00]"></span>
+              </div>
+
+              <p className="text-sm font-semibold tracking-wide text-[#444] uppercase">
                 Entrepreneurship Programme
-              </span>
-            </div>
+              </p>
+            </motion.div>
 
             {/* HEADING */}
             <h1 className="mt-7 text-4xl md:text-6xl font-bold leading-[1.05] text-[#1b1b1b]">

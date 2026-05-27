@@ -1,6 +1,5 @@
-// src/pages/OurServices.jsx
-
 import React, { memo } from "react";
+import { motion } from "framer-motion";
 
 import {
   FaArrowRight,
@@ -11,10 +10,6 @@ import {
   FaIdCard,
   FaLightbulb,
 } from "react-icons/fa";
-
-/* =========================
-   DATA
-========================= */
 
 const services = [
   {
@@ -71,10 +66,6 @@ const services = [
     bg: "bg-yellow-100",
   },
 ];
-
-/* =========================
-   CARD
-========================= */
 
 const ServiceCard = memo(({ item }) => {
   const Icon = item.icon;
@@ -215,10 +206,6 @@ const ServiceCard = memo(({ item }) => {
 
 ServiceCard.displayName = "ServiceCard";
 
-/* =========================
-   PAGE
-========================= */
-
 const OurServices = () => {
   return (
     <div className="min-h-screen bg-[#f8f2ea] overflow-hidden">
@@ -235,27 +222,23 @@ const OurServices = () => {
           {/* TOP */}
           <div className="flex flex-col items-start text-left">
             {/* TAG */}
-            <div
-              className="
-                inline-flex
-                items-center
-                gap-2
-                px-4
-                py-2
-                rounded-full
-                bg-white/70
-                backdrop-blur-md
-                border
-                border-white/40
-                shadow-sm
-              "
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="inline-flex items-center gap-3 bg-white/70 backdrop-blur-xl px-5 py-3 rounded-full shadow-lg border border-white/40"
             >
-              <div className="w-2 h-2 rounded-full bg-[#ff7a00]" />
+              {/* GLOW DOT */}
+              <div className="relative flex items-center justify-center">
+                <span className="absolute w-5 h-5 rounded-full bg-[#ff7a00]/40 animate-ping"></span>
 
-              <span className="text-[11px] md:text-xs tracking-[0.18em] uppercase font-semibold text-[#ff7a00]">
+                <span className="relative w-3 h-3 rounded-full bg-[#ff7a00] shadow-[0_0_15px_#ff7a00]"></span>
+              </div>
+
+              <p className="text-sm font-semibold tracking-wide text-[#444] uppercase">
                 Our Services
-              </span>
-            </div>
+              </p>
+            </motion.div>
 
             {/* HEADING */}
             <h1

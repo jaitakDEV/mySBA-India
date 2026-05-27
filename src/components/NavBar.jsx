@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo1.png";
+import logo from "../assets/logo1.svg";
 
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import {
@@ -70,10 +70,10 @@ const Navbar = () => {
   ];
 
   const topActions = [
-    { name: "JSKSwadeshi", path: "/jskswadeshi" },
-    { name: "Abhiyan", path: "/abhiyan" },
-    { name: "Sankalp", path: "/sankalp" },
-    { name: "Mela", path: "/mela" },
+    { name: "JSK", path: "/jskswadeshi" },
+    { name: "Swadeshi Abhiyan", path: "/abhiyan" },
+    { name: "Swadeshi Sankalp Daud", path: "/sankalp" },
+    { name: " Swadeshi Mela", path: "/mela" },
     { name: "Donate", path: "/donate" },
     { name: "Login", path: "/login" },
   ];

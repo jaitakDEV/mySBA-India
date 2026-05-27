@@ -3,12 +3,10 @@ import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedinIn, FaGithub, FaArrowUp } from "react-icons/fa";
 
 import { FiArrowUpRight } from "react-icons/fi";
+import fotterCR from "../assets/fotterCR.svg";
+import fotterIT from "../assets/fotterIT.svg";
 
 const Footer = () => {
-  // =========================
-  // EASY EDIT ARRAYS
-  // =========================
-
   const quickLinks = [
     { name: "Services/Product Offers", link: "#" },
     { name: "Terms & Conditions", link: "#" },
@@ -71,10 +69,6 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* TOP GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
-          {/* ========================= */}
-          {/* BRAND SECTION */}
-          {/* ========================= */}
-
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -105,9 +99,7 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* ========================= */}
           {/* QUICK LINKS */}
-          {/* ========================= */}
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -139,9 +131,7 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* ========================= */}
           {/* SERVICES */}
-          {/* ========================= */}
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -173,9 +163,7 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* ========================= */}
           {/* NEWSLETTER */}
-          {/* ========================= */}
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -205,43 +193,35 @@ const Footer = () => {
             </div>
           </motion.div>
         </div>
+      </div>
+      {/* BOTTOM LOGO STRIP */}
+      <div className="mt-8 border-t border-white/20 pt-5">
+        <div className="flex items-center justify-between gap-2 sm:gap-3 md:gap-4 flex-wrap">
+          {/* COPYRIGHT */}
+          <img
+            src={fotterCR}
+            alt="Copyright"
+            className="
+      w-[200px]
+      sm:w-[260px]
+      md:w-[380px]
+      h-auto
+      object-contain
+    "
+          />
 
-        {/* DIVIDER */}
-        <div className="w-full h-[1px] bg-white/20 my-12" />
-
-        {/* ========================= */}
-        {/* BOTTOM BAR */}
-        {/* ========================= */}
-
-        <div className="flex flex-col md:flex-row items-center justify-between gap-5">
-          <p className="text-[#fff3e8]/70 text-sm text-center md:text-left">
-            © 2026 MySBA. All rights reserved.
-          </p>
-
-          {/* POLICY LINKS */}
-          <div className="flex items-center gap-6 text-sm">
-            <a
-              href="#"
-              className="text-[#fff3e8]/70 hover:text-white transition-all duration-300"
-            >
-              Privacy Policy
-            </a>
-
-            <a
-              href="#"
-              className="text-[#fff3e8]/70 hover:text-white transition-all duration-300"
-            >
-              Terms & Conditions
-            </a>
-          </div>
-
-          {/* SCROLL TO TOP */}
-          <button
-            onClick={scrollToTop}
-            className="w-12 h-12 rounded-full bg-white text-[#ff7a00] flex items-center justify-center shadow-lg hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.35)] transition-all duration-300"
-          >
-            <FaArrowUp />
-          </button>
+          {/* IT COMPANY */}
+          <img
+            src={fotterIT}
+            alt="IT Company"
+            className="
+      w-[130px]
+      sm:w-[170px]
+      md:w-[240px]
+      h-auto
+      object-contain
+    "
+          />
         </div>
       </div>
     </footer>
