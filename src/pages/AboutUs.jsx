@@ -128,12 +128,11 @@ export default function AboutUs() {
   gap-10
   lg:gap-16
   items-center
-pt-20
-md:pt-24
-lg:pt-28
-pb-4
-md:pb-6
-  w-full
+  pt-14
+  md:pt-16
+  lg:pt-20
+  pb-6
+  md:pb-8
 "
         >
           {/* LEFT */}
