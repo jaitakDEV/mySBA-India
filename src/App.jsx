@@ -8,6 +8,8 @@ import EDPPage from "./pages/EDPPage";
 import Services from "./pages/Services";
 import StartupPage from "./pages/StartupPage";
 import StartupDirectory from "./pages/StartupDirectory";
+import Courses from "./pages/Courses";
+import EnterpreneurshipPage from "./pages/EntrepreneurshipPage";
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/startup" element={<StartupPage />} />
         <Route path="/startup/directory" element={<StartupDirectory />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/entrepreneurship" element={<EnterpreneurshipPage />} />
       </Route>
     </Routes>
   );

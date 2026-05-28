@@ -77,9 +77,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import slide1 from "../assets/slide1.jpeg";
-import slide2 from "../assets/slide2.jpeg";
-import slide3 from "../assets/slide3.jpeg";
+import slide1 from "../assets/slide1.webp";
+import slide2 from "../assets/slide2.webp";
+import slide3 from "../assets/slide3.webp";
 
 export default function HeroCarousel() {
   const slides = [slide1, slide2, slide3];

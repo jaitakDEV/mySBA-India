@@ -28,11 +28,11 @@ const Navbar = () => {
       dropdown: [
         { name: "Events Home", path: "/events" },
         { name: "EDP", path: "/events/edp" },
-        { name: "Webinar", path: "/events/webinar" },
-        { name: "Seminar", path: "/events/seminar" },
-        { name: "Trade Show", path: "/events/trade-show" },
-        { name: "Upcoming", path: "/events/upcoming" },
-        { name: "Past Events", path: "/events/past-events" },
+        { name: "Webinar", path: "" },
+        { name: "Seminar", path: "" },
+        { name: "Trade Show", path: "" },
+        { name: "Upcoming", path: "" },
+        { name: "Past Events", path: "" },
       ],
     },
 
@@ -40,42 +40,42 @@ const Navbar = () => {
       name: "Services",
       dropdown: [
         { name: "Services", path: "/services" },
-        { name: "Mentoring", path: "/services/mentoring" },
-        { name: "Tax Services", path: "/services/tax-services" },
-        { name: "Digital Marketing", path: "/services/digital-marketing" },
-        { name: "IT Services", path: "/services/it-services" },
-        { name: "Incubation", path: "/services/incubation" },
+        { name: "Mentoring", path: "" },
+        { name: "Tax Services", path: "" },
+        { name: "Digital Marketing", path: "" },
+        { name: "IT Services", path: "" },
+        { name: "Incubation", path: "" },
       ],
     },
 
     {
       name: "Courses",
-      dropdown: [{ name: "EDP Courses", path: "/courses/edp-courses" }],
+      dropdown: [{ name: "Courses", path: "/courses" }],
     },
 
     {
       name: "Entrepreneurship",
       dropdown: [
-        { name: "Startup", path: "/entrepreneurship/startup" },
-        { name: "FFO/FPO", path: "/entrepreneurship/ffo-fpo" },
+        { name: "Startup", path: "/entrepreneurship" },
+        { name: "FFO/FPO", path: "" },
       ],
     },
     { name: "Startup", path: "/startup" },
-    { name: "Scheme", path: "/scheme" },
-    { name: "Job & Career", path: "/job-career" },
-    { name: "Join Us", path: "/join-us" },
-    { name: "Download", path: "/download" },
-    { name: "Shop", path: "/shop" },
-    { name: "News", path: "/news" },
+    { name: "Scheme", path: "" },
+    { name: "Job & Career", path: "" },
+    { name: "Join Us", path: "" },
+    { name: "Download", path: "" },
+    { name: "Shop", path: "" },
+    { name: "News", path: "" },
   ];
 
   const topActions = [
-    { name: "JSK", path: "/jskswadeshi" },
-    { name: "Swadeshi Abhiyan", path: "/abhiyan" },
-    { name: "Swadeshi Sankalp Daud", path: "/sankalp" },
-    { name: " Swadeshi Mela", path: "/mela" },
-    { name: "Donate", path: "/donate" },
-    { name: "Login", path: "/login" },
+    { name: "JSK", path: "" },
+    { name: "Swadeshi Abhiyan", path: "" },
+    { name: "Swadeshi Sankalp Daud", path: "" },
+    { name: " Swadeshi Mela", path: "" },
+    { name: "Donate", path: "" },
+    { name: "Login", path: "" },
   ];
 
   const socials = [

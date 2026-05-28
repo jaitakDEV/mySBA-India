@@ -76,9 +76,7 @@ const workshops = [
   },
 ];
 
-/* =========================
-   IMAGE SKELETON
-========================= */
+//  IMAGE SKELETON
 
 const ImageSkeleton = memo(() => {
   return (
@@ -88,9 +86,7 @@ const ImageSkeleton = memo(() => {
 
 ImageSkeleton.displayName = "ImageSkeleton";
 
-/* =========================
-   CARD
-========================= */
+//  CARD
 
 const WorkshopCard = memo(({ item, index }) => {
   const [loaded, setLoaded] = useState(false);
@@ -138,7 +134,7 @@ const WorkshopCard = memo(({ item, index }) => {
           alt={item.title}
           loading="lazy"
           decoding="async"
-          fetchpriority="low"
+          fetchPriority="low"
           onLoad={() => setLoaded(true)}
           className={`
             w-full
@@ -222,9 +218,7 @@ const WorkshopCard = memo(({ item, index }) => {
 
 WorkshopCard.displayName = "WorkshopCard";
 
-/* =========================
-   PAGE
-========================= */
+//  PAGE
 
 const EDPPage = () => {
   return (
@@ -237,9 +231,6 @@ const EDPPage = () => {
         <div className="absolute top-[-100px] left-[-100px] w-[280px] h-[280px] rounded-full bg-[#ff7a00]/15 blur-3xl" />
 
         <div className="absolute bottom-[-100px] right-[-100px] w-[280px] h-[280px] rounded-full bg-orange-300/15 blur-3xl" />
-
-        {/* GRID */}
-        <div className="absolute inset-0 opacity-[0.025] bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-[size:60px_60px]" />
 
         <div className="relative z-10 max-w-7xl mx-auto">
           {/* HEADER */}
