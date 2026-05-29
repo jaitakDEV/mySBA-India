@@ -61,10 +61,10 @@ const Navbar = () => {
       ],
     },
     { name: "Startup", path: "/startup" },
-    { name: "Scheme", path: "" },
-    { name: "Job & Career", path: "" },
-    { name: "Join Us", path: "" },
-    { name: "Download", path: "" },
+    { name: "Scheme", path: "/schemes" },
+    { name: "Job & Career", path: "/careers" },
+    { name: "Join Us", path: "/joinus" },
+    { name: "Download", path: "/download" },
     { name: "Shop", path: "" },
     { name: "News", path: "" },
   ];
@@ -79,10 +79,13 @@ const Navbar = () => {
   ];
 
   const socials = [
-    { icon: <FaFacebookF />, link: "https://facebook.com" },
-    { icon: <FaInstagram />, link: "https://instagram.com" },
+    { icon: <FaFacebookF />, link: "https://www.facebook.com/mysba.co.in" },
+    { icon: <FaInstagram />, link: "https://www.instagram.com/mysba.co.in/" },
     { icon: <FaTwitter />, link: "https://twitter.com" },
-    { icon: <FaYoutube />, link: "https://youtube.com" },
+    {
+      icon: <FaYoutube />,
+      link: "https://www.youtube.com/@mysba-swavalambibharatabhi565",
+    },
     { icon: <FaLinkedinIn />, link: "https://linkedin.com" },
   ];
 

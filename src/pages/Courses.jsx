@@ -122,22 +122,23 @@ export default function Courses() {
         <section className="relative grid min-h-screen grid-cols-2 items-center gap-0 overflow-hidden bg-transparent px-[60px] py-[60px] max-[900px]:grid-cols-1 max-[900px]:px-[30px]">
           {/* LEFT CONTENT */}
           <div className="relative z-[2] max-w-[600px]">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="inline-flex items-center gap-3 rounded-full border border-white/40 bg-white/70 px-5 py-3 shadow-lg backdrop-blur-xl"
+            <div
+              className="
+    inline-flex items-center gap-3
+    bg-white/70 border border-white/40
+    backdrop-blur-xl px-5 py-3 rounded-full
+    shadow-lg
+  "
             >
               <div className="relative flex items-center justify-center">
-                <span className="absolute h-5 w-5 animate-ping rounded-full bg-[#ff7a00]/40"></span>
-
-                <span className="relative h-3 w-3 rounded-full bg-[#ff7a00] shadow-[0_0_15px_#ff7a00]"></span>
+                <span className="absolute w-5 h-5 rounded-full bg-[#ff7a00]/40 animate-ping"></span>
+                <span className="relative w-3 h-3 rounded-full bg-[#ff7a00] shadow-[0_0_15px_#ff7a00]"></span>
               </div>
 
-              <p className="text-sm font-semibold uppercase tracking-wide text-[#444]">
+              <p className="text-sm font-semibold tracking-wide text-[#444] uppercase">
                 Courses
               </p>
-            </motion.div>
+            </div>
 
             <h1 className="mb-[22px] pt-5 translate-y-[28px] text-[clamp(38px,4.5vw,58px)] font-black leading-[1.08] tracking-[-1.5px] text-[#1b1b1b] opacity-0 animate-[fadeUp_0.7s_0.2s_forwards]">
               Flexible &amp; Scalable.

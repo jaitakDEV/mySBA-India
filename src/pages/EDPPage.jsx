@@ -6,12 +6,12 @@ import { motion } from "framer-motion";
 import { FaArrowRight, FaCalendarAlt, FaClock } from "react-icons/fa";
 
 // ASSETS
-import workshop1 from "../assets/EDP1.jpg";
-import workshop2 from "../assets/EDP2.jpg";
-import workshop3 from "../assets/EDP3.jpg";
-import workshop4 from "../assets/EDP4.jpg";
-import workshop5 from "../assets/EDP5.JPG";
-import workshop6 from "../assets/EDP6.jpg";
+import workshop1 from "../assets/EDP1.webp";
+import workshop2 from "../assets/EDP2.webp";
+import workshop3 from "../assets/EDP3.webp";
+import workshop4 from "../assets/EDP4.webp";
+import workshop5 from "../assets/EDP5.webp";
+import workshop6 from "../assets/EDP6.webp";
 
 /* =========================
    DATA
@@ -242,12 +242,22 @@ const EDPPage = () => {
               transition={{ duration: 0.35 }}
             >
               {/* TAG */}
-              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/60 backdrop-blur-md border border-white/30 shadow-md">
-                <div className="w-2 h-2 rounded-full bg-[#ff7a00]" />
+              <div
+                className="
+    inline-flex items-center gap-3
+    bg-white/70 border border-white/40
+    backdrop-blur-xl px-5 py-3 rounded-full
+    shadow-lg 
+  "
+              >
+                <div className="relative flex items-center justify-center">
+                  <span className="absolute w-5 h-5 rounded-full bg-[#ff7a00]/40 animate-ping"></span>
+                  <span className="relative w-3 h-3 rounded-full bg-[#ff7a00] shadow-[0_0_15px_#ff7a00]"></span>
+                </div>
 
-                <span className="text-xs md:text-sm tracking-[0.18em] uppercase font-semibold text-[#ff7a00]">
+                <p className="text-sm font-semibold tracking-wide text-[#444] uppercase">
                   EDP
-                </span>
+                </p>
               </div>
 
               {/* TITLE */}

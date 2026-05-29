@@ -1,23 +1,42 @@
+import { lazy, Suspense } from "react";
+
 import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import OurServices from "./OurServices";
-import EDPJourney from "./EDPJourney";
-import MembershipPlans from "./MembershipPlans";
 import StatsSection from "../components/StatsSection";
-import SupportPage from "./SupportPage";
-import HeroCarousel2 from "../components/HeroCarousel2";
+import LoadingRing from "../components/LoadingRing";
+
+const HeroCarousel2 = lazy(() => import("../components/HeroCarousel2"));
+const EDPJourney = lazy(() => import("./EDPJourney"));
+const MembershipPlans = lazy(() => import("./MembershipPlans"));
+const SupportPage = lazy(() => import("./SupportPage"));
 
 export default function Home() {
   return (
     <>
-      <HeroCarousel2 />
+      <Suspense fallback={<LoadingRing />}>
+        <HeroCarousel2 />
+      </Suspense>
+
       <AboutUs />
+
       <StatsSection />
+
       <OurServices />
-      <EDPJourney />
-      <MembershipPlans />
+
+      <Suspense fallback={<LoadingRing />}>
+        <EDPJourney />
+      </Suspense>
+
+      <Suspense fallback={<LoadingRing />}>
+        <MembershipPlans />
+      </Suspense>
+
       <Contact />
-      <SupportPage />
+
+      <Suspense fallback={<LoadingRing />}>
+        <SupportPage />
+      </Suspense>
     </>
   );
 }

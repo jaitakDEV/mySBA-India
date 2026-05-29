@@ -137,23 +137,23 @@ export default function AboutUs() {
         >
           {/* LEFT */}
           <div>
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="inline-flex items-center gap-3 bg-white/70 backdrop-blur-xl px-5 py-3 rounded-full shadow-lg border border-white/40"
+            <div
+              className="
+    inline-flex items-center gap-3
+    bg-white/70 border border-white/40
+    backdrop-blur-xl px-5 py-3 rounded-full
+    shadow-lg mb-8
+  "
             >
-              {/* GLOW DOT */}
               <div className="relative flex items-center justify-center">
                 <span className="absolute w-5 h-5 rounded-full bg-[#ff7a00]/40 animate-ping"></span>
-
                 <span className="relative w-3 h-3 rounded-full bg-[#ff7a00] shadow-[0_0_15px_#ff7a00]"></span>
               </div>
 
               <p className="text-sm font-semibold tracking-wide text-[#444] uppercase">
                 About Swavalambi Bharat Abhiyaan
               </p>
-            </motion.div>
+            </div>
 
             <motion.h1
               initial={{ opacity: 0, y: 60 }}

@@ -237,30 +237,23 @@ const ServicesPage = () => {
           {/* TOP */}
           <div className="max-w-5xl">
             {/* TAG */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
+            <div
               className="
-                inline-flex
-                items-center
-                gap-2
-                px-5
-                py-2
-                rounded-full
-                bg-white/60
-                backdrop-blur-md
-                border
-                border-white/40
-                shadow-md
-              "
+    inline-flex items-center gap-3
+    bg-white/70 border border-white/40
+    backdrop-blur-xl px-5 py-3 rounded-full
+    shadow-lg 
+  "
             >
-              <div className="w-2 h-2 rounded-full bg-[#ff7a00]" />
+              <div className="relative flex items-center justify-center">
+                <span className="absolute w-5 h-5 rounded-full bg-[#ff7a00]/40 animate-ping"></span>
+                <span className="relative w-3 h-3 rounded-full bg-[#ff7a00] shadow-[0_0_15px_#ff7a00]"></span>
+              </div>
 
-              <span className="text-xs md:text-sm tracking-[0.18em] uppercase font-semibold text-[#ff7a00]">
+              <p className="text-sm font-semibold tracking-wide text-[#444] uppercase">
                 Services
-              </span>
-            </motion.div>
+              </p>
+            </div>
 
             {/* TITLE */}
             <motion.h1

@@ -12,6 +12,7 @@ import slide3 from "../assets/EntSlider3.webp";
 
 import deasraLogo from "../assets/deAsralogo-1.svg";
 import teamleaseLogo from "../assets/teamlease-logo.webp";
+import { motion } from "framer-motion";
 
 const companies = [
   "DeAsra",
@@ -125,34 +126,30 @@ export default function EnterpreneurshipPage() {
 
         <div className="relative z-10 mx-auto max-w-7xl">
           {/* Heading */}
-          <div className="mb-16 text-center">
-            <span
+          <div className="mb-16 text-left">
+            <div
               className="
-          inline-flex
-          items-center
-          rounded-full
-          border
-          border-[#ff7a00]/20
-          bg-white/70
-          px-5
-          py-2
-          text-xs
-          font-bold
-          uppercase
-          tracking-[4px]
-          text-[#ff7a00]
-          shadow-sm
-          backdrop-blur-xl
-        "
+    inline-flex items-center gap-3
+    bg-white/70 border border-white/40
+    backdrop-blur-xl px-5 py-3 rounded-full
+    shadow-lg
+  "
             >
-              Entrepreneurship
-            </span>
+              <div className="relative flex items-center justify-center">
+                <span className="absolute w-5 h-5 rounded-full bg-[#ff7a00]/40 animate-ping"></span>
+                <span className="relative w-3 h-3 rounded-full bg-[#ff7a00] shadow-[0_0_15px_#ff7a00]"></span>
+              </div>
+
+              <p className="text-sm font-semibold tracking-wide text-[#444] uppercase">
+                Enterpreneurship
+              </p>
+            </div>
 
             <h2 className="mt-6 text-4xl font-black tracking-tight text-[#1b1b1b] md:text-6xl">
               Leading startups
             </h2>
 
-            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#555]">
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#555]">
               Collaborating with top entrepreneurship and workforce
               organizations to build innovation ecosystems and startup
               opportunities.

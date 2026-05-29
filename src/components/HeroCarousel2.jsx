@@ -40,7 +40,7 @@ const SLIDES = [
     accent: "#F9A8D4",
   },
   {
-    id: 4,
+    id: 5,
     title: "MySBA News",
     subtitle: "",
     description: "सवालंबी भरत की आवाज",

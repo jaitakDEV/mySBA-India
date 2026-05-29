@@ -156,26 +156,23 @@ export default function EventsPage() {
             {/* LEFT */}
 
             <div>
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  scale: 0.9,
-                }}
-                animate={{
-                  opacity: 1,
-                  scale: 1,
-                }}
-                transition={{
-                  duration: 0.6,
-                }}
-                className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/50 px-4 py-2 backdrop-blur-xl"
+              <div
+                className="
+    inline-flex items-center gap-3
+    bg-white/70 border border-white/40
+    backdrop-blur-xl px-5 py-3 rounded-full
+    shadow-lg mb-8
+  "
               >
-                <FiZap className="text-[#ff7a00]" />
+                <div className="relative flex items-center justify-center">
+                  <span className="absolute w-5 h-5 rounded-full bg-[#ff7a00]/40 animate-ping"></span>
+                  <span className="relative w-3 h-3 rounded-full bg-[#ff7a00] shadow-[0_0_15px_#ff7a00]"></span>
+                </div>
 
-                <span className="text-sm font-medium text-[#555]">
+                <p className="text-sm font-semibold tracking-wide text-[#444] uppercase">
                   Startup Events & Entrepreneurial Sessions
-                </span>
-              </motion.div>
+                </p>
+              </div>
 
               <motion.h1
                 variants={fadeUp}
