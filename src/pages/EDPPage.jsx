@@ -4,13 +4,12 @@ import { FiArrowRight } from "react-icons/fi";
 
 import EDPCard from "../components/EDPCard";
 
-import img1 from "../assets/edp1.webp";
-import img2 from "../assets/edp2.webp";
-import img3 from "../assets/edp3.webp";
-import img4 from "../assets/edp4.webp";
-import img5 from "../assets/edp5.webp";
-import img6 from "../assets/edp6.webp";
-
+import img1 from "../assets/EDP1.webp";
+import img2 from "../assets/EDP2.webp";
+import img3 from "../assets/EDP3.webp";
+import img4 from "../assets/EDP4.webp";
+import img5 from "../assets/EDP5.webp";
+import img6 from "../assets/EDP6.webp";
 const cardData = [
   {
     id: 1,
