@@ -16,7 +16,7 @@ const cardData = [
     id: 1,
     image: img1,
     title: "सिलाई कार्यशाला",
-    representedBy: "Team MYSBA",
+    representedBy: "",
     dateTime: "03 Jan 2026 10:00 AM To 05:00 PM",
     type: "Offline Free Course",
   },
