@@ -1,54 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
-import slide1 from "../assets/slide1.webp";
-import slide2 from "../assets/slide2.webp";
-import slide3 from "../assets/slide3.webp";
-import slide4 from "../assets/slide4.webp";
-import slide5 from "../assets/slide5.webp";
-
-const SLIDES = [
-  {
-    id: 1,
-    title: "Yuva Udhmita Yatra",
-    subtitle: "",
-    description: "",
-    src: slide1,
-    accent: "#6EE7B7",
-  },
-  {
-    id: 2,
-    title: "MySBA",
-    subtitle: "",
-    description: "भारत के लिए एक संदेश",
-    src: slide2,
-    accent: "#FCD34D",
-  },
-  {
-    id: 3,
-    title: "Swadeshi Mela",
-    subtitle: "",
-    description: "गर्व से कहो - मेरा भारत, मेरा उत्पद",
-    src: slide3,
-    accent: "#F9A8D4",
-  },
-  {
-    id: 4,
-    title: "Yuva Udhmita Yatra - Jaipur",
-    subtitle: "",
-    description: "",
-    src: slide4,
-    accent: "#F9A8D4",
-  },
-  {
-    id: 5,
-    title: "MySBA News",
-    subtitle: "",
-    description: "सवालंबी भरत की आवाज",
-    src: slide5,
-    accent: "#F9A8D4",
-  },
-];
-
 const AUTOPLAY_DELAY = 5000;
 
 function useImageAspect(src) {
@@ -292,7 +243,7 @@ function SlideImage({ slide, animClass, globalMode }) {
    MAIN CAROUSEL
 ───────────────────────────────────────────── */
 export default function HeroCarousel2({
-  slides = SLIDES,
+  slides = [],
   autoplayDelay = AUTOPLAY_DELAY,
   showArrows = true,
   showDots = true,
@@ -565,27 +516,6 @@ export default function HeroCarousel2({
             duration={autoplayDelay}
             accent={slide.accent}
           />
-        </div>
-
-        {/* Thumbnail strip — desktop/tablet only */}
-        <div className="thumbnail-strip hide-mobile" aria-hidden="true">
-          {slides.map((s, i) => (
-            <button
-              key={s.id}
-              className="thumbnail-btn"
-              onClick={() => goTo(i, i > active ? "next" : "prev")}
-              aria-label={`Jump to: ${s.title}`}
-              style={{
-                border:
-                  i === active
-                    ? `2px solid ${s.accent}`
-                    : "2px solid transparent",
-                opacity: i === active ? 1 : 0.52,
-              }}
-            >
-              <img src={s.src} alt="" loading="lazy" />
-            </button>
-          ))}
         </div>
       </div>
     </>

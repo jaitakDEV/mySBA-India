@@ -53,7 +53,6 @@ function BadgeRing() {
   );
 }
 
-// Main Component
 export default function Courses() {
   return (
     <>

@@ -11,11 +11,12 @@ import {
   FaTwitter,
   FaYoutube,
   FaLinkedinIn,
+  FaEnvelope,
 } from "react-icons/fa";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [hideTopBar, setHideTopBar] = useState(false);
+
   const [mobileDropdown, setMobileDropdown] = useState(null);
 
   const location = useLocation();
@@ -28,24 +29,12 @@ const Navbar = () => {
       dropdown: [
         { name: "Events Home", path: "/events" },
         { name: "EDP", path: "/events/edp" },
-        { name: "Webinar", path: "" },
-        { name: "Seminar", path: "" },
-        { name: "Trade Show", path: "" },
-        { name: "Upcoming", path: "" },
-        { name: "Past Events", path: "" },
       ],
     },
 
     {
       name: "Services",
-      dropdown: [
-        { name: "Services", path: "/services" },
-        { name: "Mentoring", path: "" },
-        { name: "Tax Services", path: "" },
-        { name: "Digital Marketing", path: "" },
-        { name: "IT Services", path: "" },
-        { name: "Incubation", path: "" },
-      ],
+      dropdown: [{ name: "Services", path: "/services" }],
     },
 
     {
@@ -55,10 +44,7 @@ const Navbar = () => {
 
     {
       name: "Entrepreneurship",
-      dropdown: [
-        { name: "Startup", path: "/entrepreneurship" },
-        { name: "FFO/FPO", path: "" },
-      ],
+      dropdown: [{ name: "Startup", path: "/entrepreneurship" }],
     },
     { name: "Startup", path: "/startup" },
     { name: "Scheme", path: "/schemes" },
@@ -79,6 +65,10 @@ const Navbar = () => {
   ];
 
   const socials = [
+    {
+      icon: <FaEnvelope />,
+      link: "https://mail.google.com/mail/?view=cm&fs=1&to=info@mysba.co.in&su=Business%20Inquiry",
+    },
     { icon: <FaFacebookF />, link: "https://www.facebook.com/mysba.co.in" },
     { icon: <FaInstagram />, link: "https://www.instagram.com/mysba.co.in/" },
     { icon: <FaTwitter />, link: "https://twitter.com" },
@@ -101,17 +91,6 @@ const Navbar = () => {
     return () => (document.body.style.overflow = "auto");
   }, [open]);
 
-  // Hide top bar on scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      setHideTopBar(window.scrollY > 50);
-    };
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const toggleMobileDropdown = (name) => {
     setMobileDropdown((prev) => (prev === name ? null : name));
   };
@@ -121,14 +100,10 @@ const Navbar = () => {
       <header className="fixed top-0 left-0 w-full z-[999] pointer-events-none">
         {/* TOP BAR */}
         <div
-          className={`hidden lg:flex justify-between items-center px-4 xl:px-10 text-sm overflow-hidden transition-all duration-500 pointer-events-auto ${
-            hideTopBar
-              ? "max-h-0 opacity-0 py-0"
-              : "max-h-[60px] opacity-100 py-2"
-          }`}
+          className="hidden lg:flex justify-between items-center px-4 xl:px-10 text-sm py-2 pointer-events-auto"
           style={{
             background:
-              "linear-gradient(90deg, rgba(140,60,0,0.96) 0%, rgba(200,85,0,0.95) 50%, rgba(255,122,0,0.94) 100%)",
+              "linear-gradient(90deg, #8c3c00 0%, #c85500 50%, #ff7a00 100%)",
             color: "#fffaf5",
             borderBottom: "1px solid rgba(255,255,255,0.14)",
             boxShadow: "0 4px 24px rgba(140,60,0,0.28)",

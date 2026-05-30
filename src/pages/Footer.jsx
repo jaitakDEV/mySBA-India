@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaInstagram, FaLinkedinIn, FaGithub, FaArrowUp } from "react-icons/fa";
+import { FaInstagram, FaArrowUp, FaYoutube, FaFacebookF } from "react-icons/fa";
 
 import { FiArrowUpRight } from "react-icons/fi";
 import fotterCR from "../assets/fotterCR.svg";
@@ -29,15 +29,15 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <FaInstagram />,
-      link: "#",
+      link: "https://www.instagram.com/mysba.co.in/",
     },
     {
-      icon: <FaLinkedinIn />,
-      link: "#",
+      icon: <FaYoutube />,
+      link: "https://www.youtube.com/@mysba-swavalambibharatabhi565",
     },
     {
-      icon: <FaGithub />,
-      link: "#",
+      icon: <FaFacebookF />,
+      link: "https://www.facebook.com/mysba.co.in",
     },
   ];
 

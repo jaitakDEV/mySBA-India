@@ -33,7 +33,7 @@ const styles = `
     background: var(--bg);
     color: var(--text);
     overflow-x: hidden;
-    cursor: none;
+      cursor: auto !important;
   }
 
   /* CUSTOM CURSOR */
@@ -55,8 +55,7 @@ const styles = `
     transform: translate(-50%,-50%);
     transition: all 0.12s ease;
   }
-  body.hovering #cursor-dot { width: 14px; height: 14px; }
-  body.hovering #cursor-ring { width: 52px; height: 52px; border-color: var(--orange); }
+ 
 
   /* NOISE TEXTURE */
   .noise-overlay {
@@ -215,7 +214,7 @@ const styles = `
     border: 1.5px solid rgba(255,255,255,0.7);
     border-radius: 100px;
     font-size: 0.84rem; font-weight: 500;
-    color: var(--text2); cursor: none;
+    color: var(--text2); 
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
   }
@@ -237,7 +236,7 @@ const styles = `
     background: var(--orange);
     color: white; border: none; border-radius: 100px;
     font-family: var(--font-body);
-    font-size: 1rem; font-weight: 600; cursor: none;
+    font-size: 1rem; font-weight: 600;
     position: relative; overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 6px 30px var(--orange-glow);
@@ -253,7 +252,7 @@ const styles = `
     border: 1.5px solid rgba(0,0,0,0.1);
     border-radius: 100px;
     font-family: var(--font-body);
-    font-size: 1rem; font-weight: 500; cursor: none;
+    font-size: 1rem; font-weight: 500;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
   }
@@ -286,7 +285,7 @@ const styles = `
     font-weight: 700; font-size: 1rem;
     color: rgba(0,0,0,0.25); letter-spacing: -0.02em;
     transition: color 0.3s, transform 0.3s;
-    cursor: none;
+  
   }
   .trusted-logo:hover { color: var(--orange); transform: scale(1.05); }
 
@@ -376,7 +375,7 @@ const styles = `
     padding: 28px;
     position: relative; overflow: hidden;
     transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-    cursor: none;
+  
   }
   .job-card::before {
     content: ''; position: absolute; inset: 0;
@@ -400,7 +399,7 @@ const styles = `
     color: white; flex-shrink: 0;
   }
   .save-btn {
-    background: none; border: none; cursor: none;
+    background: none; border: none; 
     color: var(--text3); font-size: 1.1rem;
     padding: 6px; border-radius: 8px;
     transition: all 0.3s;
@@ -450,7 +449,7 @@ const styles = `
     padding: 10px 22px; background: var(--orange);
     color: white; border: none; border-radius: 100px;
     font-family: var(--font-body);
-    font-size: 0.85rem; font-weight: 600; cursor: none;
+    font-size: 0.85rem; font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 0 4px 16px var(--orange-glow);
   }
@@ -480,7 +479,7 @@ const styles = `
     border-radius: var(--radius);
     padding: 32px 28px;
     transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-    cursor: none; position: relative; overflow: hidden;
+    position: relative; overflow: hidden;
   }
   .why-card::after {
     content: ''; position: absolute;
@@ -562,7 +561,7 @@ const styles = `
     max-width: 380px; width: 100%;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
-    cursor: none;
+    
   }
   .timeline-card:hover {
     transform: translateY(-4px);
@@ -625,7 +624,7 @@ const styles = `
     scroll-snap-align: start;
     box-shadow: var(--shadow);
     transition: all 0.4s;
-    cursor: none;
+    
   }
   .testimonial-card:hover {
     transform: translateY(-6px);
@@ -656,7 +655,7 @@ const styles = `
     border: 1.5px solid rgba(0,0,0,0.12);
     background: var(--glass); backdrop-filter: blur(10px);
     display: flex; align-items: center; justify-content: center;
-    cursor: none; font-size: 0.9rem; color: var(--heading);
+    font-size: 0.9rem; color: var(--heading);
     transition: all 0.3s;
   }
   .slider-btn:hover {
@@ -673,7 +672,7 @@ const styles = `
     text-align: center;
     background: linear-gradient(135deg, rgba(255,122,0,0.03), rgba(255,154,60,0.05));
     transition: all 0.4s;
-    cursor: none; position: relative; overflow: hidden;
+     position: relative; overflow: hidden;
   }
   .resume-zone.drag-over, .resume-zone:hover {
     border-color: var(--orange);
@@ -713,7 +712,7 @@ const styles = `
     backdrop-filter: blur(16px);
     border: 1.5px solid rgba(255,255,255,0.8);
     border-radius: var(--radius); padding: 28px 22px;
-    text-align: center; cursor: none;
+    text-align: center;
     transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
     position: relative; overflow: hidden;
   }
@@ -752,7 +751,7 @@ const styles = `
     width: 100%; background: none; border: none;
     padding: 24px 0;
     display: flex; justify-content: space-between; align-items: center;
-    cursor: none; text-align: left;
+     text-align: left;
     transition: all 0.3s;
   }
   .faq-q-text {
@@ -845,7 +844,7 @@ const styles = `
     background: white; color: var(--orange);
     border: none; border-radius: 100px;
     font-family: var(--font-body);
-    font-size: 0.95rem; font-weight: 700; cursor: none;
+    font-size: 0.95rem; font-weight: 700;
     transition: all 0.3s;
     white-space: nowrap;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -1323,44 +1322,6 @@ export default function CareerLanding() {
   const [statsVisible, setStatsVisible] = useState(false);
   const statsRef = useRef(null);
   const testimonialRef = useRef(null);
-  const cursorDotRef = useRef(null);
-  const cursorRingRef = useRef(null);
-  const mousePos = useRef({ x: 0, y: 0 });
-  const ringPos = useRef({ x: 0, y: 0 });
-  const rafRef = useRef(null);
-
-  // Cursor
-  useEffect(() => {
-    const moveCursor = (e) => {
-      mousePos.current = { x: e.clientX, y: e.clientY };
-      if (cursorDotRef.current) {
-        cursorDotRef.current.style.left = e.clientX + "px";
-        cursorDotRef.current.style.top = e.clientY + "px";
-      }
-    };
-    const animateRing = () => {
-      ringPos.current.x += (mousePos.current.x - ringPos.current.x) * 0.12;
-      ringPos.current.y += (mousePos.current.y - ringPos.current.y) * 0.12;
-      if (cursorRingRef.current) {
-        cursorRingRef.current.style.left = ringPos.current.x + "px";
-        cursorRingRef.current.style.top = ringPos.current.y + "px";
-      }
-      rafRef.current = requestAnimationFrame(animateRing);
-    };
-    const addHover = () => document.body.classList.add("hovering");
-    const removeHover = () => document.body.classList.remove("hovering");
-    document.addEventListener("mousemove", moveCursor);
-    document.querySelectorAll("button,a,[data-hover]").forEach((el) => {
-      el.addEventListener("mouseenter", addHover);
-      el.addEventListener("mouseleave", removeHover);
-    });
-    rafRef.current = requestAnimationFrame(animateRing);
-    return () => {
-      document.removeEventListener("mousemove", moveCursor);
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
-  }, []);
-
   // Scroll
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -1452,8 +1413,6 @@ export default function CareerLanding() {
   return (
     <>
       <style>{styles}</style>
-      <div id="cursor-dot" ref={cursorDotRef} />
-      <div id="cursor-ring" ref={cursorRingRef} />
       <div className="noise-overlay" />
 
       {/* HERO */}
@@ -1563,7 +1522,7 @@ export default function CareerLanding() {
               Curated from 1000+ verified companies.
             </p>
           </div>
-          <button className="btn-primary">View All 28k Jobs →</button>
+          <button className="btn-primary">View All 1k Jobs →</button>
         </div>
 
         <div className="jobs-grid">
